@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f3;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  min-height: 550px;
+  background: white;
+  margin-top: 20px;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.center {
+  justify-content: center;
+  height: 100%;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.primary {
+  background: #6c2bd9;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 60px;margin-bottom: 8px;
+}
+
+.secondary {
+  background: #655985;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.left {
+  left: -100px;
+}
+
+.right {
+  right: -100px;
+}
+
+.bottom-nav {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .card {
+    max-width: 400px;
+  }
+}
+.radios{
+  padding: 13px;
+}
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+  height: 25px;
+  width: 25px;
+  background-color: #6c2bd9;
+  border-radius: 50%;
+  position: relative;
+  left:-30px;
+  top:16px;
+}
+.profilecontent{
+  border-bottom: #555 dashed;
+}
+
+/* Popup Menu */
+.menu-popup {
+  position: fixed;
+  bottom: 40px;
+  left: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 150px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.menu-popup div {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  
+  
+}
+
+.menu-popup div:hover {
+  background: #f2f2f2;
+}
+
+/* Bottom Sheet */
+.sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.report-page{
+  font-size:smaller;
+  height: auto;
+
+}
+.sheet {
+  background: white;
+  width: 100%;
+  max-width: 300px;
+  padding: 39px;
+  max-height: 580px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.sheet input,
+.sheet textarea {
+  width: 80%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;  
+  line-height: 1px;
+}
+.report-list label{
+  position: relative;
+  left: 70px;
+  top:-13px;
+}
+.report-list input{
+display: flex;
+
+}
+.report-buttons button{
+  padding: 5px 13px;
+  border-radius: 12px;
+  margin: 12px;
+}
+.required-line{
+  color: red;
+}
+.reportbtn{
+ background-color: blue;
+ color: white;
+ font-weight: 600;
+}
+.cancelbtn{
+  font-weight: 600;
+}
+.loginbtn{
+  padding: 12px;
+  border-radius: 18px;
+  font-weight: 900;
+  color: white;
+  background-color: blue;
+}

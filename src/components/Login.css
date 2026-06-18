@@ -1,0 +1,27 @@
+label{
+    color: blue;
+    background-color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    
+}
+.label-company{
+    width: 121px;
+}
+.label-phone{
+width: 122px;
+}
+.label-email{
+width: 100px;
+}
+.label-password{
+width: 80px;
+}
+.label-company{
+    width: 122px;
+}
+.label-name{
+    width: 80px;
+}
